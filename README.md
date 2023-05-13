@@ -1,17 +1,18 @@
 # ODAM:Gradient-based instance-specific Visual Explanation for Object Detection
 
-The method framework and results are shown here:
+ODAM is a straightforward and easy-to-implement method to generate visual explanation heat maps for predictions of object detection. The framework and results are shown here:
 
 <img width=60% src="https://github.com/Cyang-Zhao/ODAM/blob/main/images/framework.jpg"/>
 <img width=90% src="https://github.com/Cyang-Zhao/ODAM/blob/main/images/examples.jpg"/>
 
 # Example of Generating visual explanation maps by ODAM:
 
+ODAM is easy to be applied on different detector architectures, here is an example using FCOS:
 - Detector: FCOS
-- Model: FCOS-resnet50. 
 - Data: MS COCO val2017 
 - Demo for one image: [Demo_ODAM](https://github.com/Cyang-Zhao/ODAM/blob/main/tools/demo_ODAM.ipynb)
-- Steps to save heat maps and evaluation:
+
+Steps to save heat maps and evaluation:
 1. The path of the dataset is set in `config_coco.py`.
 2. Download the fcos detector [model](https://www.dropbox.com/s/v70pq3x5w74yenn/dump-12.pth?dl=0) and put into the folder `./model/fcos_regular/coco_model/`
 3. ```cd tools```
