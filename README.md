@@ -2,7 +2,7 @@
 
 ODAM is a straightforward and easy-to-implement method to generate visual explanation heat maps for predictions of object detection. The framework and results are shown here:
 
-<img width=60% src="https://github.com/Cyang-Zhao/ODAM/blob/main/images/framework.jpg"/>
+<img width=90% src="https://github.com/Cyang-Zhao/ODAM/blob/main/images/framework.jpg"/>
 <img width=90% src="https://github.com/Cyang-Zhao/ODAM/blob/main/images/examples.jpg"/>
 
 # Example of Generating visual explanation maps by ODAM:
