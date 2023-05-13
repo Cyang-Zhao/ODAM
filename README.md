@@ -16,11 +16,12 @@ The method framework and results are shown here:
 2. Download the fcos detector [model](https://www.dropbox.com/s/v70pq3x5w74yenn/dump-12.pth?dl=0) and put into the folder `./model/fcos_regular/coco_model/`
 3. ```cd tools```
 
+4. Saving heat maps for high-quality predictions
 - Saving ODAM explanation maps:
 ```python savefig_odam.py -md fcos_regular -r 12```
 - Saving D-RISE explanation maps:
 ```python savefig_drise.py -md fcos_regular -r 12```
-5. Evaluation ODAM and D-RISE:
+5. Evaluation of ODAM and D-RISE:
 - point game
 ```python eval_pointgame.py -md fcos_regular -t odam```
 - visual explanation accuracy (mask IoU)
