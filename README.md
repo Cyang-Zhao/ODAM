@@ -2,15 +2,15 @@
 
 The method framework and results are shown here:
 
-<!-- <img width=60% src="https://github.com/Purkialo/images/blob/master/CrowdDet_arch.jpg"/>
-<img width=90% src="https://github.com/Purkialo/images/blob/master/CrowdDet_demo.jpg"/> -->
+<img width=60% src="https://github.com/Cyang-Zhao/ODAM/blob/main/images/framework.jpg"/>
+<img width=90% src="https://github.com/Cyang-Zhao/ODAM/blob/main/images/examples.jpg"/>
 
 # Example of Generating visual explanation maps by ODAM:
 
 - Detector: FCOS
 - Model: FCOS-resnet50
 - Data: MS COCO val2017 
-- Demo for one image: [Demo_ODAM]()
+- Demo for one image: [Demo_ODAM](https://github.com/Cyang-Zhao/ODAM/blob/main/tools/demo_ODAM.ipynb)
 - Steps to save heat maps and evaluation:
 1. The path of the dataset is set in `config_coco.py`.
 2. Download the fcos detecot model and put into the folder `./model/fcos_regular/coco_model/`
