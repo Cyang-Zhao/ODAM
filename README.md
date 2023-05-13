@@ -8,28 +8,28 @@ The method framework and results are shown here:
 # Example of Generating visual explanation maps by ODAM:
 
 - Detector: FCOS
-- Model: FCOS-resnet50
+- Model: FCOS-resnet50. 
 - Data: MS COCO val2017 
 - Demo for one image: [Demo_ODAM](https://github.com/Cyang-Zhao/ODAM/blob/main/tools/demo_ODAM.ipynb)
 - Steps to save heat maps and evaluation:
 1. The path of the dataset is set in `config_coco.py`.
-2. Download the fcos detecot model and put into the folder `./model/fcos_regular/coco_model/`
+2. Download the fcos detector [model](https://www.dropbox.com/s/v70pq3x5w74yenn/dump-12.pth?dl=0) and put into the folder `./model/fcos_regular/coco_model/`
 3. ```cd tools```
-4. 
--Saving ODAM explanation maps:
+
+- Saving ODAM explanation maps:
 ```python savefig_odam.py -md fcos_regular -r 12```
--Saving D-RISE explanation maps:
+- Saving D-RISE explanation maps:
 ```python savefig_drise.py -md fcos_regular -r 12```
 5. Evaluation ODAM and D-RISE:
--point game
+- point game
 ```python eval_pointgame.py -md fcos_regular -t odam```
--visual explanation accuracy (mask IoU)
+- visual explanation accuracy (mask IoU)
 ```python eval_mask_IoU.py -md fcos_regular -t odam```
--ODI
+- ODI
 ```python eval_odi.py -md fcos_regular -t odam```
--deletion
+- deletion
 ```python eval_delet.py -md fcos_regular -r 12 -t odam```
--insertion
+- insertion
 ```python eval_insert.py -md fcos_regular -r 12 -t odam```
 
 
