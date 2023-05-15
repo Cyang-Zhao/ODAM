@@ -23,17 +23,26 @@ Steps to save heat maps and evaluation:
 - Saving D-RISE explanation maps:
 ```python savefig_drise.py -md fcos_regular -r 12```
 5. Evaluation of ODAM and D-RISE:
-- point game
+- Point Game
 ```python eval_pointgame.py -md fcos_regular -t odam```
-- visual explanation accuracy (mask IoU)
+- Visual Explanation Accuracy (Mask IoU)
 ```python eval_mask_IoU.py -md fcos_regular -t odam```
 - ODI
 ```python eval_odi.py -md fcos_regular -t odam```
-- deletion
+- Deletion
 ```python eval_delet.py -md fcos_regular -r 12 -t odam```
-- insertion
+- Insertion
 ```python eval_insert.py -md fcos_regular -r 12 -t odam```
 
+
+# Odam-Train and Odam-NMS:
+
+- For train, download the [initial weights](https://www.dropbox.com/s/1yb1s3hacg68cam/resnet50_fbaug.pth?dl=0), and the path is set in `config_crowdhuman.py`, then run:
+```cd tools```
+```python train_crowdhuman.py -md fcos_odamTrain```
+- For test, download the [model](https://www.dropbox.com/s/5oqciysj6ip5tvf/dump-30.pth?dl=0) and put into the folder `./model/fcos_odamTrain/outputs/`. The NMS method is set in `config_crowdhuman.py`, then run:
+```cd tools```
+```python test_crowdhuman.py -md fcos_odamTrain -r 30```
 
 # Citation
 
