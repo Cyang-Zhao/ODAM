@@ -56,7 +56,7 @@ python eval_insert.py -md fcos_regular -r 12 -t odam
 cd tools
 python train_crowdhuman.py -md fcos_odamTrain
 ```
-- For test, download the [model](https://www.dropbox.com/s/5oqciysj6ip5tvf/dump-30.pth?dl=0) and put into the folder `./model/fcos_odamTrain/outputs/`. The NMS method is set in `config_crowdhuman.py`, then run:
+- For test, download the [model](https://www.dropbox.com/s/5oqciysj6ip5tvf/dump-30.pth?dl=0) and put into the folder `./model/fcos_odamTrain/outputs/`. The NMS method choosing option is set in `config_crowdhuman.py`, then run:
 ```
 cd tools
 python test_crowdhuman.py -md fcos_odamTrain -r 30
