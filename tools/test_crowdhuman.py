@@ -82,6 +82,7 @@ def inference(config, network, model_file, device, dataset, start, end, result_q
     dataset.records = dataset.records[start:end];
     data_iter = torch.utils.data.DataLoader(dataset=dataset, shuffle=False)
     nms_type = config.test_nms_method
+    print('nms_type:', nms_type)
     # inference
     for (image, gt_boxes, im_info, ID, _) in data_iter:
         pred_boxes = net(image.cuda(device), im_info.cuda(device))

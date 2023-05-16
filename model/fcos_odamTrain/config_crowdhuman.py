@@ -14,8 +14,7 @@ add_path(os.path.join(root_dir, 'lib'))
 class Crowd_human:
     class_names = ['background', 'person']
     num_classes = len(class_names)
-    root_folder = '/opt/visal/home/chenyzhao9/data/crowdhuman'
-    # root_folder = '/opt/visal/home/chenyzhao9/data/CrowdHuman_server'
+    root_folder = '../data/crowdhuman'
     image_folder = os.path.join(root_folder, 'images')
     train_source = os.path.join(root_folder,'annotations/annotation_train.odgt')
     eval_source = os.path.join(root_folder,'annotations/annotation_val.odgt')
@@ -25,7 +24,7 @@ class Config:
     model_dir = output_dir
     # model_dir = os.path.join(output_dir, 'model_dump')
     eval_dir = os.path.join(output_dir, 'eval_dump')
-    init_weights = '/opt/visal/home/chenyzhao9/data/model/resnet50_fbaug.pth'
+    init_weights = '../data/model/resnet50_fbaug.pth'
 
     # ----------data config---------- #
     image_mean = np.array([103.530, 116.280, 123.675])
@@ -63,8 +62,8 @@ class Config:
 
     # ----------test config---------- #
     test_nms = 0.5
-    test_nms_method = 'normal_nms'
-    # test_nms_method = 'odam_nms'
+    # test_nms_method = 'normal_nms'
+    test_nms_method = 'odam_nms'
     # test_nms_method = 'soft_nms'
     visulize_threshold = 0.3
     pred_cls_threshold = 0.05

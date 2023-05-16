@@ -51,6 +51,7 @@ python eval_insert.py -md fcos_regular -r 12 -t odam
 
 # Odam-Train and Odam-NMS:
 
+Train and test on [CrowdHuman](https://www.crowdhuman.org/) dataset, the data path is set in `config_crowdhuman.py`.
 - For train, download the [initial weights](https://www.dropbox.com/s/1yb1s3hacg68cam/resnet50_fbaug.pth?dl=0), and the path is set in `config_crowdhuman.py`, then run:
 ```
 cd tools
