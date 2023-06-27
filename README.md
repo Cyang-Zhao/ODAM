@@ -7,10 +7,11 @@ ODAM is a straightforward and easy-to-implement method to generate visual explan
 
 # Example of Generating visual explanation maps by ODAM:
 
-ODAM is easy to be applied on different detector architectures, here is an example using FCOS:
+ODAM is easy to be applied on different detector architectures. Here is an example:
 - Detector: FCOS
 - Data: MS COCO val2017 
-- Demo for one image: [Demo_ODAM](https://github.com/Cyang-Zhao/ODAM/blob/main/tools/demo_ODAM.ipynb)
+- Demo for one image: [Demo_ODAM](https://github.com/Cyang-Zhao/ODAM/blob/main/tools/demo_ODAM.ipynb) ; Demo based on DETR minimal implementation: [Demo_detr](https://colab.research.google.com/drive/1j-JZuZ3FXXQucr_LZWSxCUmHsqpWzaVR#scrollTo=kqe_0nc5dyAq)
+  
 
 Steps to save heat maps and evaluation:
 1. The path of the dataset is set in `config_coco.py`.
