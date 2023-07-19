@@ -15,7 +15,7 @@ ODAM is easy to be applied on different detector architectures. Here is an examp
 
 Steps to save heat maps and evaluation:
 1. The path of the dataset is set in `config_coco.py`.
-2. Download the fcos detector [model](https://www.dropbox.com/s/v70pq3x5w74yenn/dump-12.pth?dl=0) and put into the folder `./model/fcos_regular/coco_model/`; faster rcnn detector [model]() and put into the folder `./model/rcnn_regular/coco_model/`.
+2. Download the fcos detector [model](https://www.dropbox.com/s/v70pq3x5w74yenn/dump-12.pth?dl=0) and put into the folder `./model/fcos_regular/coco_model/`; faster rcnn detector [model](https://www.dropbox.com/scl/fi/jbdsi9u6iyjhaqfmd0hgk/dump-12.pth?rlkey=z7892nlzx6qmu6y1ymm1k7a5y&dl=0) and put into the folder `./model/rcnn_regular/coco_model/`.
 3. ```cd tools```
 
 4. Saving heat maps for high-quality predictions
@@ -58,7 +58,7 @@ Train and test on [CrowdHuman](https://www.crowdhuman.org/) dataset, the data pa
 cd tools
 python train_crowdhuman.py -md fcos_odamTrain
 ```
-- For test, download the fcos [model](https://www.dropbox.com/s/5oqciysj6ip5tvf/dump-30.pth?dl=0) and put into the folder `./model/fcos_odamTrain/outputs/` and faster rcnn [model]() to `./model/rcnn_odamTrain/outputs/`. The NMS method choosing option is set in `config_crowdhuman.py`, then run:
+- For test, download the fcos [model](https://www.dropbox.com/s/5oqciysj6ip5tvf/dump-30.pth?dl=0) and put into the folder `./model/fcos_odamTrain/outputs/` and faster rcnn [model](https://www.dropbox.com/scl/fi/gcoasnmq0f4ll7g6ydpfj/dump-30.pth?rlkey=z72ocld13xcsjwzamxv5c7dw7&dl=0) to `./model/rcnn_odamTrain/outputs/`. The NMS method choosing option is set in `config_crowdhuman.py`, then run:
 ```
 cd tools
 python test_crowdhuman.py -md fcos_odamTrain -r 30
