@@ -57,9 +57,10 @@ class Network(nn.Module):
         else:
             # do inference
             # stride: 8,16,32,64,128
-            pred_bbox = self.per_layer_inference(
-                    grids, strides, pred_cls_list, pred_reg_list, pred_qly_list, im_info)
-            return pred_bbox.detach()
+            with torch.no_grad():
+                pred_bbox = self.per_layer_inference(
+                        grids, strides, pred_cls_list, pred_reg_list, pred_qly_list, im_info)
+            return pred_bbox
 
     def fcos_criteria(self, pred_cls_list, pred_reg_list, pred_qly_list, 
         grids, list_strides, gt_boxes, im_info):
