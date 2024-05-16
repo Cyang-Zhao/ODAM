@@ -49,6 +49,9 @@ python eval_delet.py -md fcos_regular -r 12 -t odam
 python eval_insert.py -md fcos_regular -r 12 -t odam
 ```
 
+# ODAM with MMDetection:
+
+Thanks to Shujun, who provides an implementation based on MMDetection: [ODAM_MMDetection_FCOS](https://github.com/migoxia/ODAM).
 
 # Odam-Train and Odam-NMS:
 
